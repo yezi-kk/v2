@@ -1235,7 +1235,7 @@ start_menu() {
   echo -e " 当前拥塞控制算法为: ${Green_font_prefix}${net_congestion_control}${Font_color_suffix} 当前队列算法为: ${Green_font_prefix}${net_qdisc}${Font_color_suffix} "
 
   # read -p " 请输入数字 :" num
-  num="11"
+  num=11
   case "$num" in
   0)
     Update_Shell
