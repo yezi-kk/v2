@@ -632,6 +632,7 @@ startbbrfq() {
   echo "net.ipv4.tcp_congestion_control=bbr" >>/etc/sysctl.d/99-sysctl.conf
   sysctl --system
   echo -e "${Info}BBR+FQ修改成功，重启生效！"
+  reboot
 }
 
 #启用BBR+fq_pie
@@ -1234,6 +1235,7 @@ start_menu() {
   fi
   echo -e " 当前拥塞控制算法为: ${Green_font_prefix}${net_congestion_control}${Font_color_suffix} 当前队列算法为: ${Green_font_prefix}${net_qdisc}${Font_color_suffix} "
 
+  # read -p " 请输入数字 :" num
   num=11
   case "$num" in
   0)
