@@ -363,51 +363,51 @@ echo && echo -e " TCP加速 一键安装管理脚本 ${Red_font_prefix}[v${sh_ve
 	fi
 echo
 # read -p " 请输入数字 [0-11]:" num
-num="4"
-case "$num" in
-	0)
-	Update_Shell
-	;;
-	1)
-	check_sys_bbr
-	;;
-	2)
-	check_sys_bbrplus
-	;;
-	3)
-	check_sys_Lotsever
-	;;
-	4)
-	startbbr
-	;;
-	5)
-	startbbrmod
-	;;
-	6)
-	startbbrmod_nanqinlang
-	;;
-	7)
-	startbbrplus
-	;;
-	8)
-	startlotserver
-	;;
-	9)
-	remove_all
-	;;
-	10)
-	optimizing_system
-	;;
-	11)
-	exit 1
-	;;
-	*)
-	clear
-	echo -e "${Error}:请输入正确数字 [0-11]"
-	sleep 5s
-	start_menu
-	;;
-esac
+startbbr
+# case "$num" in
+# 	0)
+# 	Update_Shell
+# 	;;
+# 	1)
+# 	check_sys_bbr
+# 	;;
+# 	2)
+# 	check_sys_bbrplus
+# 	;;
+# 	3)
+# 	check_sys_Lotsever
+# 	;;
+# 	4)
+# 	startbbr
+# 	;;
+# 	5)
+# 	startbbrmod
+# 	;;
+# 	6)
+# 	startbbrmod_nanqinlang
+# 	;;
+# 	7)
+# 	startbbrplus
+# 	;;
+# 	8)
+# 	startlotserver
+# 	;;
+# 	9)
+# 	remove_all
+# 	;;
+# 	10)
+# 	optimizing_system
+# 	;;
+# 	11)
+# 	exit 1
+# 	;;
+# 	*)
+# 	clear
+# 	echo -e "${Error}:请输入正确数字 [0-11]"
+# 	sleep 5s
+# 	start_menu
+# 	;;
+# esac
 }
 #############内核管理组件#############
 
